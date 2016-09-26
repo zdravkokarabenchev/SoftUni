@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-class Program
+public class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
         string hex = Console.ReadLine();
         int dec = Convert.ToInt32(hex, 16);

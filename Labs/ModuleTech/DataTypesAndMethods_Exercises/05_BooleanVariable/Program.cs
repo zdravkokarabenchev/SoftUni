@@ -4,20 +4,20 @@ public class Example
 {
     public static void Main()
     {
+        //input----------------------------------------------------------------
         string input = Console.ReadLine();
         //bool variable = Convert.ToBoolean(input);
         bool variable = bool.Parse(input);
 
-        //if (variable)
-        //{
-        //    Console.WriteLine("Yes");
-        //}
-        //else
-        //{
-        //    Console.WriteLine("No");
-        //}
-        Console.WriteLine("variable");
-
+        //output---------------------------------------------------------------
+        if (variable)
+        {
+            Console.WriteLine("Yes");
+        }
+        else
+        {
+            Console.WriteLine("No");
+        }
+        // Console.WriteLine(variable ? "Yes" : "No");
     }
 }
-//?????????????????????????????????????????   Judge - 100!   ?!?!?

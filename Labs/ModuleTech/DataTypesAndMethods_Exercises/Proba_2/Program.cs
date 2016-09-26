@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _24_PrimesInGivenRange
+namespace _19__new__TheaThePhotographer
 {
     class Program
     {
@@ -12,39 +12,16 @@ namespace _24_PrimesInGivenRange
         {
             int n1 = int.Parse(Console.ReadLine());
             int n2 = int.Parse(Console.ReadLine());
-            string strProba = "";
-            int counter = 0;
-            for (int k = n1; k <= n2; k++)
+
+            for (int i = n1; i <= n2; i++)
             {
-                bool primeOrNot = true;
-                if (k == 0 || k == 1)
+                char code = (char)i;
+                Console.Write(code);
+                if (i<n2)
                 {
-                    primeOrNot = false;
-                }
-                else
-                {
-                    for (long i = 2; i <= Math.Sqrt(k); i++)
-                    {
-                        if (k % i == 0)
-                        {
-                            primeOrNot = false;
-                        }
-                    }
-                }
-                if (primeOrNot == true)
-                {
-                    if (counter == 0)
-                    {
-                        strProba += k;
-                    }
-                    else
-                    {
-                        strProba += ", " + k;
-                    }
-                    counter++;
+                    Console.Write(" ");
                 }
             }
-            Console.WriteLine(strProba);
         }
     }
 }

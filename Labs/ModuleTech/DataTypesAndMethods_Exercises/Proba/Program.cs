@@ -10,7 +10,12 @@ namespace _24_PrimesInGivenRange
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(1000000000000000000.0+0.3);
+            string str = Console.ReadLine();
+            for (int i = str.Length-1; i >= 0; i--)
+            {
+                char letter = str[i];
+                Console.Write(letter);
+            }
         }
     }
 }

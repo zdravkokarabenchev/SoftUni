@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-class Program
+public class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
         decimal num1 = 3.141592653589793238m;
         double num2 = 1.60217657;
